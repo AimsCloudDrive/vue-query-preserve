@@ -1,21 +1,18 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "@msom/vue-query-preserve-v3",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Vue 3 插件，在路由跳转时自动保留指定的查询参数",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.mjs",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs.js"
-    }
-  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --noEmit && vite build --config ../../vite.config.ts",
+    "clean": "rimraf dist",
+    "check": "tsc --noEmit",
+    "build": "pnpm run clean && pnpm run check && vite build --config ../../vite.config.ts",
     "release": "pnpm run build && pnpm publish"
   },
   "keywords": [
