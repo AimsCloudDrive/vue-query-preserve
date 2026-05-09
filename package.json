@@ -1,0 +1,27 @@
+{
+  "name": "@msom/vue-query-preserve",
+  "version": "1.0.0",
+  "description": "Vue 插件 monorepo，在路由跳转时自动保留指定的查询参数，支持 Vue 2 和 Vue 3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "release": "pnpm -r run release"
+  },
+  "keywords": [
+    "vue",
+    "vue-router",
+    "query",
+    "preserve",
+    "plugin",
+    "monorepo"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@11.0.9+sha512.34ce82e6780233cf9cad8685029a8f81d2e06196c5a9bad98879f7424940c6817c4e4524fb7d38b8553ceed48b9758b8ebaf1abd3600c232c4c8cf7366086f38",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "latest",
+    "vite": "8.0.11"
+  }
+}

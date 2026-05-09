@@ -1,0 +1,41 @@
+{
+  "name": "@msom/vue-query-preserve-v3",
+  "version": "1.0.0",
+  "description": "Vue 3 插件，在路由跳转时自动保留指定的查询参数",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --noEmit && vite build --config ../../vite.config.ts",
+    "release": "pnpm run build && pnpm publish"
+  },
+  "keywords": [
+    "vue",
+    "vue-router",
+    "vue3",
+    "query",
+    "preserve",
+    "plugin"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "peerDependencies": {
+    "vue": "^3.x",
+    "vue-router": "^4.x"
+  },
+  "devDependencies": {
+    "vite": "^5.0.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  }
+}
