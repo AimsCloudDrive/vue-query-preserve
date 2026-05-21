@@ -32,7 +32,8 @@ const init = (router: any, options: QueryPreserveOptions = {}) => {
     const preserved: Record<string, string> = {};
     if (preserveKeys.length > 0 && from.query) {
       preserveKeys.forEach((key) => {
-        if (from.query[key] !== undefined) {
+        // 来源中有，但目标路由中没有，则保留
+        if (from.query[key] !== undefined && to.query[key] === undefined) {
           preserved[key] = from.query[key] as string;
         }
       });

@@ -1,13 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/package",
-  "name": "@msom/vue-query-preserve-v2",
-  "version": "1.0.7",
-  "description": "Vue 2 插件，在路由跳转时自动保留指定的查询参数",
+  "name": "@msom/types-vue2",
+  "version": "1.0.0",
+  "description": "Vue 2 插件类型定义",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
   "types": "./dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src"
   ],
   "scripts": {
     "clean": "rimraf dist",
@@ -17,24 +18,20 @@
   },
   "keywords": [
     "vue",
-    "vue-router",
     "vue2",
-    "query",
-    "preserve",
     "plugin"
   ],
   "author": "",
   "license": "ISC",
   "type": "module",
   "peerDependencies": {
-    "vue": "^2.x",
-    "vue-router": "^3.x"
+    "vue": "^2.x"
   },
   "devDependencies": {
     "@types/vue": "^2.0.0",
-    "vite": "^5.0.0",
-    "vue": "^2.7.0",
-    "vue-router": "^3.6.0"
+    "element-ui": "2.15.13",
+    "vite": "^5.4.21",
+    "vue": "^2.7.16"
   },
   "publishConfig": {
     "access": "public",
